@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/judulText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="194dp" />
+
+    <TextView
+        android:id="@+id/judulText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibe Tune"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@id/judulText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Email or Username"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/judulText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/forgotText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="14sp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#404C6C"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:layout_below="@id/forgotText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/regisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not have an account? Register"
+        android:textSize="14sp"
+        android:layout_below="@id/loginButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="openRegisterPage"/>
+
+</RelativeLayout>

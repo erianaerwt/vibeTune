@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/judulText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Onboard!"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp" />
+
+    <!-- Subheading Text -->
+    <TextView
+        android:id="@+id/subheadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s help you meet up your tasks."
+        android:textSize="14sp"
+        android:layout_below="@id/judulText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Enter your full name"
+        android:layout_below="@id/subheadingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/EmailEditText2"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/nameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/EmailEditText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Confirm Password EditText -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#404C6C"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Login Text -->
+    <TextView
+        android:id="@+id/forgotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textSize="14sp"
+        android:layout_below="@id/loginButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
