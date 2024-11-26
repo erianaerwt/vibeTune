@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <!-- Welcome Text -->
     <TextView
@@ -10,6 +11,8 @@
         android:layout_height="wrap_content"
         android:text="Welcome Onboard!"
         android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="105dp" />
@@ -19,8 +22,10 @@
         android:id="@+id/subheadingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
         android:text="Let’s help you meet up your tasks."
         android:textSize="14sp"
+        android:textColor="@color/white"
         android:layout_below="@id/judulText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
@@ -79,6 +84,7 @@
         android:layout_height="55dp"
         android:backgroundTint="#404C6C"
         android:text="Register"
+        android:fontFamily="@font/poppins_bold"
         android:textSize="20dp"
         android:layout_below="@id/confirmPasswordEditText"
         android:layout_centerHorizontal="true"
@@ -91,6 +97,8 @@
         android:layout_height="wrap_content"
         android:text="Already have an account? Login"
         android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_light"
         android:layout_below="@id/loginButton2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />

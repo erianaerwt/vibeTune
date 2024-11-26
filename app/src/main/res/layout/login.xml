@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+>
 
     <TextView
         android:id="@+id/judulText1"
@@ -10,28 +12,54 @@
         android:text="Welcome Back!"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="194dp" />
-
-    <TextView
-        android:id="@+id/judulText2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vibe Tune"
-        android:textSize="35dp"
-        android:textStyle="bold"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_below="@id/judulText1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp"
+        >
+        
+        <TextView
+            android:id="@+id/judulText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibe Tune"
+            android:textSize="35dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            />
+        
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo aplikasi" />
 
+
+
+    </LinearLayout>
+
+    
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="355dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/poppins_light"
         android:background="@drawable/border"
         android:hint="Email or Username"
         android:inputType="textEmailAddress"
-        android:layout_below="@id/judulText2"
+        android:layout_below="@id/linearlayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp" />
 
@@ -40,6 +68,7 @@
         android:layout_width="355dp"
         android:layout_height="50dp"
         android:background="@drawable/border"
+        android:fontFamily="@font/poppins_light"
         android:hint="Password"
         android:inputType="textPassword"
         android:layout_below="@id/emailEditText"
@@ -51,7 +80,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
         android:layout_below="@id/passwordEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
@@ -62,6 +93,7 @@
         android:layout_height="55dp"
         android:backgroundTint="#404C6C"
         android:text="LOGIN"
+        android:fontFamily="@font/poppins_bold"
         android:textSize="20dp"
         android:layout_below="@id/forgotText1"
         android:layout_centerHorizontal="true"
@@ -73,6 +105,8 @@
         android:layout_height="wrap_content"
         android:text="Not have an account? Register"
         android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="#FFFFFF"
         android:layout_below="@id/loginButton2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
