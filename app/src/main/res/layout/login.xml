@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/login"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background"
->
+    tools:context="com.vibetune.musicplayer.LoginActivity">
 
     <TextView
         android:id="@+id/judulText1"
@@ -111,7 +113,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:padding="14dp"
-        android:clickable="true"
-        android:onClick="openRegisterPage"/>
+        android:clickable="true" />
 
 </RelativeLayout>

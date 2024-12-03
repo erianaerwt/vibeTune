@@ -5,20 +5,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context="com.vibetune.musicplayer.MainActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/judulText"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginLeft="16dp"-->
-<!--        android:layout_marginTop="210dp"-->
-<!--        android:text="Vibe Tune"-->
-<!--        android:fontFamily="@font/poppins_bold"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="35dp"-->
-<!--        android:textStyle="bold" />-->
 
     <LinearLayout
         android:id="@+id/linearlayout1"
@@ -26,9 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="210dp"
-        android:layout_below="@id/judulText"
         >
 
         <TextView
@@ -59,10 +45,10 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/judulText"
+        android:layout_below="@id/linearlayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="5dp"
         android:text="Feel the Vibe, Tune Your World."
         android:fontFamily="@font/poppins_bold"
         android:textColor="@color/white"
