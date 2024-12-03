@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D3155"
-    tools:context="com.example.musicplayer.HomeActivity">
+    tools:context="com.vibetune.musicplayer.HomeActivity">
 
 
     <LinearLayout
@@ -342,7 +342,6 @@
             android:layout_height="32dp"
             android:src="@drawable/home"
             android:contentDescription="Home Icon"
-            android:tint="#FFFFFF"
             android:layout_weight="1" />
 
         <ImageView
@@ -351,7 +350,6 @@
             android:layout_height="32dp"
             android:src="@drawable/search"
             android:contentDescription="Search Icon"
-            android:tint="#FFFFFF"
             android:layout_weight="1" />
 
         <ImageView
@@ -360,11 +358,11 @@
             android:layout_height="32dp"
             android:src="@drawable/library"
             android:contentDescription="Library Icon"
-            android:tint="#FFFFFF"
+
             android:layout_weight="1" />
     </LinearLayout>
 
-    <!-- Now Playing Section -->
+
     <LinearLayout
         android:id="@+id/nowPlayingBar"
         android:layout_width="0dp"
@@ -415,7 +413,6 @@
             android:layout_height="24dp"
             android:src="@drawable/heart"
             android:contentDescription="Like Icon"
-            android:tint="#FFFFFF"
             android:layout_marginEnd="16dp" />
 
         <ImageView
@@ -424,7 +421,7 @@
             android:layout_height="24dp"
             android:src="@drawable/play"
             android:contentDescription="Play Icon"
-            android:tint="#FFFFFF" />
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
