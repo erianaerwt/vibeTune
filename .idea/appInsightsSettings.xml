@@ -9,10 +9,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.vibetune.musicplayer" />
+                  <option name="mobileSdkAppId" value="1:309680762806:android:b601304dc9511ee009db17" />
+                  <option name="projectId" value="vibetune-47cf9" />
+                  <option name="projectNumber" value="309680762806" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
