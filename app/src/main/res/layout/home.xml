@@ -8,7 +8,7 @@
     android:background="#2D3155"
     tools:context=".MainActivity">
 
-    <!-- App Bar -->
+
     <LinearLayout
         android:id="@+id/appBar"
         android:layout_width="0dp"
@@ -24,21 +24,15 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/menu"
-            android:contentDescription="Menu Icon" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:contentDescription="Menu Icon"
+            />
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/notification"
-            android:contentDescription="Notification Icon" />
+            android:contentDescription="Notification Icon"
+            android:layout_marginLeft="280dp"/>
 
         <ImageView
             android:layout_width="32dp"
@@ -51,16 +45,20 @@
     </LinearLayout>
 
     <!-- Greeting -->
+
     <TextView
         android:id="@+id/greetingText"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:paddingLeft="20dp"
         android:text="Hello Jeky 👋"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
 
     <TextView
         android:id="@+id/moodPrompt"
@@ -85,12 +83,15 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt"
         tools:layout_editor_absoluteX="0dp">
 
@@ -225,12 +226,15 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="275dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt"
         tools:layout_editor_absoluteX="0dp">
 
@@ -341,6 +345,8 @@
         android:background="#1D2037"
         android:paddingHorizontal="16dp"
         android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
@@ -379,6 +385,7 @@
         android:elevation="4dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView

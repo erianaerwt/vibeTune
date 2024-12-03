@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome Back!"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins_bold"
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vibe Tune"
-            android:textSize="35dp"
+            android:textSize="35sp"
             android:fontFamily="@font/poppins_bold"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -94,7 +94,7 @@
         android:backgroundTint="#404C6C"
         android:text="LOGIN"
         android:fontFamily="@font/poppins_bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_below="@id/forgotText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp" />
@@ -110,6 +110,7 @@
         android:layout_below="@id/loginButton2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:padding="14dp"
         android:clickable="true"
         android:onClick="openRegisterPage"/>
 
