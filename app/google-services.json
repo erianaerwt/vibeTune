@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309680762806",
+    "project_id": "vibetune-47cf9",
+    "storage_bucket": "vibetune-47cf9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309680762806:android:b601304dc9511ee009db17",
+        "android_client_info": {
+          "package_name": "com.vibetune.musicplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA54XXEkpwSQe_UELaYbTt1nQSp8TMOe2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
