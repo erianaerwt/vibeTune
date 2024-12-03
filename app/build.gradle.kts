@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vibetune"
+    namespace = "com.vibetune.musicplayer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.vibetune"
+        applicationId = "com.vibetune.musicplayer"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

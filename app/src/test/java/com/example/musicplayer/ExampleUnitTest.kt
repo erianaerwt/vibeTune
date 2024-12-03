@@ -1,4 +1,4 @@
-package com.example.vibetune
+package com.example.musicplayer
 
 import org.junit.Test
 
