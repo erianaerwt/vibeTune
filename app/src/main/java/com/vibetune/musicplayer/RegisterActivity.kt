@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -47,7 +48,7 @@ class RegisterActivity : AppCompatActivity() {
             } else if (password != confirmPassword) {
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
             } else {
-                registerUser(email, password)
+                registerUser(name, email, password)
             }
         }
 
@@ -58,17 +59,34 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun registerUser(email: String, password: String) {
+    private fun registerUser(name: String, email: String, password: String) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Register sukses
                     val user = firebaseAuth.currentUser
-                    Toast.makeText(this, "Welcome ${user?.email}", Toast.LENGTH_SHORT).show()
-                    // Navigasi ke halaman login atau home
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-                    finish()
+                    val userId = user?.uid
+
+                    // Simpan nama pengguna ke Firebase Realtime Database
+                    val database = FirebaseDatabase.getInstance().reference
+                    val userMap = mapOf(
+                        "name" to name,
+                        "email" to email
+                    )
+                    userId?.let {
+                        database.child("users").child(it).setValue(userMap)
+                            .addOnCompleteListener { saveTask ->
+                                if (saveTask.isSuccessful) {
+                                    Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
+                                    // Navigasi ke halaman login
+                                    val intent = Intent(this, LoginActivity::class.java)
+                                    startActivity(intent)
+                                    finish()
+                                } else {
+                                    Toast.makeText(this, "Failed to save user data: ${saveTask.exception?.message}", Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                    }
                 } else {
                     // Register gagal
                     Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
