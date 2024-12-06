@@ -9,21 +9,30 @@
     tools:context="com.vibetune.musicplayer.HomeActivity">
 
 
-    <ImageView
-        android:id="@+id/profile"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="Profile Image"
         android:orientation="horizontal"
-        android:src="@drawable/profile_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    !-- Greeting -->
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/profile_image"
+            android:contentDescription="Profile Image"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Greeting -->
+
     <TextView
         android:id="@+id/greetingText"
         android:layout_width="234dp"
@@ -36,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile" />
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
 
     <TextView
         android:id="@+id/moodPrompt"
@@ -194,6 +203,7 @@
     </HorizontalScrollView>
 
     <!-- Recommendation Section -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -348,6 +358,7 @@
             android:layout_height="32dp"
             android:src="@drawable/library"
             android:contentDescription="Library Icon"
+
             android:layout_weight="1" />
     </LinearLayout>
 

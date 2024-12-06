@@ -1,32 +1,68 @@
 package com.vibetune.musicplayer
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.squareup.picasso.Picasso
 
 class HomeActivity : AppCompatActivity() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var profileImage: ImageView
+    private lateinit var greetingText: TextView
+    private lateinit var homeIcon: ImageView
+    private lateinit var searchIcon: ImageView
+    private lateinit var libraryIcon: ImageView
+    private lateinit var playIcon: ImageView
+    private lateinit var likeIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
 
+        // Initialize FirebaseAuth
+        firebaseAuth = FirebaseAuth.getInstance()
+
         // Initialize views
+        profileImage = findViewById(R.id.profile)
+        greetingText = findViewById(R.id.greetingText)
+        homeIcon = findViewById(R.id.home)
+        searchIcon = findViewById(R.id.search)
+        libraryIcon = findViewById(R.id.library)
+        playIcon = findViewById(R.id.play)
+        likeIcon = findViewById(R.id.heart)
 
-        val profileImage: ImageView = findViewById(R.id.profile)
+        // Get current user info from Firebase
+        val user = firebaseAuth.currentUser
+        if (user != null) {
+            // Get user name and profile image URL from Firebase Realtime Database
+            val database = FirebaseDatabase.getInstance().reference
+            val userRef = database.child("users").child(user.uid)
 
-        val homeIcon: ImageView = findViewById(R.id.home)
-        val searchIcon: ImageView = findViewById(R.id.search)
-        val libraryIcon: ImageView = findViewById(R.id.library)
+            userRef.get().addOnSuccessListener {
+                if (it.exists()) {
+                    val userName = it.child("name").value.toString()
+                    val profileUrl = it.child("profileUrl").value.toString()
 
-        val playIcon: ImageView = findViewById(R.id.play)
-        val likeIcon: ImageView = findViewById(R.id.heart)
+                    // Set greeting and profile image
+                    greetingText.text = "Hello, $userName!"
+                    Picasso.get().load(profileUrl).into(profileImage)
+                }
+            }.addOnFailureListener {
+                Toast.makeText(this, "Failed to load user data.", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-
-
+        // Set listeners
         profileImage.setOnClickListener {
-            Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
+            // Go to profile page for editing
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         homeIcon.setOnClickListener {
