@@ -25,6 +25,7 @@
             android:id="@+id/profile"
             android:layout_width="46dp"
             android:layout_height="46dp"
+            android:src="@drawable/profile_image"
             android:contentDescription="Profile Image"
             android:layout_marginStart="8dp" />
 
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:paddingLeft="20dp"
+        android:text="Hello Jeky 👋"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
