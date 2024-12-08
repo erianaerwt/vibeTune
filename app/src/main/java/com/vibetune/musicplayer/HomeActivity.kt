@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.squareup.picasso.Picasso
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -51,7 +51,6 @@ class HomeActivity : AppCompatActivity() {
 
                     // Set greeting and profile image
                     greetingText.text = "Hello, $userName!"
-                    Picasso.get().load(profileUrl).into(profileImage)
                 }
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed to load user data.", Toast.LENGTH_SHORT).show()

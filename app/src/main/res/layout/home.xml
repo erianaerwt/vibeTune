@@ -27,7 +27,8 @@
             android:layout_height="46dp"
             android:src="@drawable/profile_image"
             android:contentDescription="Profile Image"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"/>
 
     </LinearLayout>
 
@@ -37,9 +38,7 @@
         android:id="@+id/greetingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:paddingLeft="20dp"
-        android:text="Hello Jeky 👋"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,27 +87,6 @@
             android:orientation="horizontal"
             android:paddingHorizontal="8dp">
 
-            <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginEnd="10dp"
-                android:background="#7B5EEE">
-
-                <ImageView
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="Pop Genre"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="top|center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:text="Pop"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
-            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="150dp"
@@ -120,16 +98,22 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre" />
+                    android:contentDescription="Pop" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top|center_horizontal"
                     android:layout_marginBottom="8dp"
-                    android:text="Jazz"
+                    android:text="Pop"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Pop Genre" />
             </FrameLayout>
 
             <FrameLayout
@@ -142,14 +126,14 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="DJ"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top|center_horizontal"
                     android:layout_marginBottom="8dp"
-                    android:text="Indie"
+                    android:text="DJ Remix"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </FrameLayout>
@@ -164,14 +148,14 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="Barat"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top|center_horizontal"
                     android:layout_marginBottom="8dp"
-                    android:text="Rock"
+                    android:text="Barat"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </FrameLayout>
@@ -186,14 +170,14 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="Koplo"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top|center_horizontal"
                     android:layout_marginBottom="8dp"
-                    android:text="Hip Hop"
+                    android:text="Koplo"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </FrameLayout>
