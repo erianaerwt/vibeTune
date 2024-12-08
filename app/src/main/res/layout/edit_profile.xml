@@ -15,6 +15,7 @@
         android:layout_height="40dp"
         android:layout_margin="16dp"
         android:src="@drawable/back"
+        android:contentDescription="@string/back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -23,9 +24,10 @@
         android:id="@+id/btn_edit_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#D9818EB2"
         android:padding="6dp"
         android:text="Edit Profile"
-        android:textColor="@color/white"
+        android:textColor="#1C1B2F"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +43,6 @@
         android:layout_height="100dp"
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/profile_image"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_edit_profile" />
@@ -50,11 +51,11 @@
         android:id="@+id/tv_profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Jeky Wicaksono"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:fontFamily="sans-serif-medium"
-        android:layout_marginBottom="10dp"
         app:layout_constraintTop_toBottomOf="@id/profile_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -89,7 +90,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#CCCCCC"
+                android:padding="14dp"
+                android:hint="Jeky wicaksono"
                 android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Email Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email Address"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:backgroundTint="#CCCCCC"
+                android:hint="jeky_wicak03@gmail.com"
+                android:inputType="textEmailAddress"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
@@ -106,7 +129,9 @@
                 android:id="@+id/et_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="14dp"
                 android:backgroundTint="#CCCCCC"
+                android:hint="+62-851-5682-8518"
                 android:inputType="phone"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
@@ -121,7 +146,6 @@
                 android:textSize="14sp" />
 
             <LinearLayout
-                android:id="@+id/birthdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -131,7 +155,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:padding="14dp"
                     android:backgroundTint="#CCCCCC"
+                    android:hint="04"
                     android:inputType="number"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -141,7 +167,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:padding="14dp"
                     android:backgroundTint="#CCCCCC"
+                    android:hint="November"
                     android:inputType="text"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
@@ -151,7 +179,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:padding="14dp"
                     android:backgroundTint="#CCCCCC"
+                    android:hint="2002"
                     android:inputType="number"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />

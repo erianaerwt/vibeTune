@@ -32,6 +32,7 @@
         android:textColor="#FFFFFF"
         android:textSize="24dp"
         android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,8 @@
             android:paddingStart="16dp"
             android:textColor="#FFFFFF"
             android:textColorHint="#CCCCCC"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <ImageView
             android:id="@+id/search_icon"
@@ -80,7 +82,8 @@
         android:layout_marginStart="16dp"
         android:text="Recent searches"
         android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
 
     <!-- Recent Searches List -->
     <LinearLayout
@@ -121,7 +124,8 @@
                     android:text="Olivia Rodrigo"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_regular"/>
 
                 <TextView
                     android:id="@+id/item_subtitle"
