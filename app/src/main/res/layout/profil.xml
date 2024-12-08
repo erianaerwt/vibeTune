@@ -40,6 +40,7 @@
         android:text="My Profile"
         android:textColor="@color/white"
         android:textSize="30sp"
+        android:fontFamily="@font/poppins_light"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/backButton"
@@ -68,6 +69,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/profilePicture"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,14 +93,16 @@
             android:layout_height="wrap_content"
             android:text="Email:"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/info_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/phone"
@@ -107,14 +111,16 @@
             android:text="Phone Number:"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/info_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/birthDate"
@@ -123,7 +129,8 @@
             android:text="Birth Date:"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/info_birthDate"
@@ -131,7 +138,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="14sp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
 
     <!-- Music Info Section -->
@@ -172,7 +180,8 @@
                 android:text="120 Songs"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
         </FrameLayout>
 
         <!-- 12 Playlists -->
@@ -198,7 +207,8 @@
                 android:text="12 Playlists"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
         </FrameLayout>
 
         <!-- 3 Albums -->
@@ -224,7 +234,8 @@
                 android:text="3 Albums"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
         </FrameLayout>
     </LinearLayout>
 
@@ -247,7 +258,8 @@
             android:layout_margin="16dp"
             android:text="Others"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/helpSupport"
@@ -256,7 +268,8 @@
             android:text="Help &amp; Support"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:layout_margin="16dp" />
+            android:layout_margin="16dp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <TextView
             android:id="@+id/logout"
@@ -265,6 +278,7 @@
             android:text="Logout"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:layout_margin="16dp" />
+            android:layout_margin="16dp"
+            android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

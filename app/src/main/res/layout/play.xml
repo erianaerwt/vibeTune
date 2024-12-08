@@ -13,6 +13,7 @@
         android:text="Playing From Playlist"
         android:textColor="#A7B5C9"
         android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
@@ -23,6 +24,7 @@
         android:text="Euphoria Soundtrack"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
         android:layout_below="@id/playing_from"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="4dp"/>
@@ -62,6 +64,7 @@
         android:text="Formula"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
         android:layout_below="@id/album_art"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
@@ -74,6 +77,7 @@
         android:text="Labirinth"
         android:textColor="#A7B5C9"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
         android:layout_below="@id/song_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="4dp"/>
@@ -108,7 +112,8 @@
             android:layout_height="wrap_content"
             android:text="0:56"
             android:textColor="#A7B5C9"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"/>
 
         <View
             android:layout_width="0dp"
@@ -121,7 +126,8 @@
             android:layout_height="wrap_content"
             android:text="1:31"
             android:textColor="#A7B5C9"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
 
     <!-- Media Controls -->
@@ -187,7 +193,8 @@
             android:layout_height="wrap_content"
             android:text="Lirik"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bolitalic"/>
 
         <TextView
             android:id="@+id/lyrics"
@@ -195,6 +202,7 @@
             android:layout_height="wrap_content"
             android:text="Screws loose, tell’em\nScrews loose, tell’em\nI’m livin’ for the thrill, formula, tell’em"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
 </RelativeLayout>
