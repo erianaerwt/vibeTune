@@ -41,6 +41,7 @@
         android:paddingLeft="20dp"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +56,7 @@
         android:text="What’s your mood today?"
         android:textColor="#AAAAAA"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +70,7 @@
         android:text="Genres"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt" />
@@ -107,7 +110,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Pop"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
 
                 <ImageView
                     android:layout_width="76dp"
@@ -135,7 +139,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="DJ Remix"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <FrameLayout
@@ -157,7 +162,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Barat"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <FrameLayout
@@ -179,7 +185,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Koplo"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <!-- Add more genres as needed -->
@@ -196,6 +203,7 @@
         android:text="You may like it"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toBottomOf="@id/moodPrompt" />
@@ -234,7 +242,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="All Out 80s"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <FrameLayout
@@ -256,7 +265,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Aesthetic"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <FrameLayout
@@ -278,7 +288,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Viral"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <FrameLayout
@@ -300,7 +311,8 @@
                     android:layout_marginBottom="8dp"
                     android:text="Love Songs"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
             </FrameLayout>
 
             <!-- Add more genres as needed -->
@@ -379,6 +391,7 @@
                 android:text="Formula - Labrinth"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
                 android:maxLines="1"
                 android:ellipsize="end" />
 
