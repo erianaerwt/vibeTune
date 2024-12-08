@@ -15,7 +15,6 @@
         android:layout_height="40dp"
         android:layout_margin="16dp"
         android:src="@drawable/back"
-        android:contentDescription="@string/back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
