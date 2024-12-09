@@ -18,7 +18,6 @@ class LibraryActivity : AppCompatActivity() {
         val addIcon = findViewById<ImageView>(R.id.add_icon)
         val playlistsTab = findViewById<Button>(R.id.playlists_tab)
         val albumsTab = findViewById<Button>(R.id.albums_tab)
-        val gridView = findViewById<GridView>(R.id.grid_view)
         val homelibrary = findViewById<ImageView>(R.id.homelibrary)
         val searchlibrary = findViewById<ImageView>(R.id.searchlibrary)
 
@@ -34,7 +33,7 @@ class LibraryActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             playlistData
         )
-        gridView.adapter = adapter
+
 
         // Event klik untuk ikon pencarian
         searchIcon.setOnClickListener {
@@ -56,11 +55,6 @@ class LibraryActivity : AppCompatActivity() {
             Toast.makeText(this, "Albums tab clicked", Toast.LENGTH_SHORT).show()
         }
 
-        // Event klik untuk item di GridView
-        gridView.setOnItemClickListener { _, _, position, _ ->
-            val playlistName = playlistData[position]
-            Toast.makeText(this, "$playlistName clicked", Toast.LENGTH_SHORT).show()
-        }
 
         // Event klik untuk profil
         profileImage.setOnClickListener {
