@@ -123,7 +123,7 @@
                     android:id="@+id/item_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Olivia Rodrigo"
+                    android:text="Nina"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -133,7 +133,7 @@
                     android:id="@+id/item_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Artist"
+                    android:text="Feast"
                     android:textColor="#CCCCCC"
                     android:textSize="12sp" />
             </LinearLayout>
