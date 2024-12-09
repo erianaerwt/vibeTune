@@ -4,6 +4,7 @@ import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,6 +15,7 @@ class PopSongsActivity : AppCompatActivity() {
     private lateinit var search_icon: ImageView
     private lateinit var btnSort : ImageView
     private lateinit var backButton : ImageView
+    private lateinit var item_layout : LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +27,15 @@ class PopSongsActivity : AppCompatActivity() {
         search_icon = findViewById(R.id.search_icon)
         btnSort = findViewById(R.id.btnSort)
         backButton = findViewById(R.id.backButton)
+        item_layout = findViewById(R.id.item_layout)
 
         libraryIcon.setOnClickListener {
             val intent = Intent(this, LibraryActivity::class.java)
+            startActivity(intent)
+        }
+
+        item_layout.setOnClickListener {
+            val intent = Intent(this, PlayActivity::class.java)
             startActivity(intent)
         }
 

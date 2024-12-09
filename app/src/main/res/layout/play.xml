@@ -158,7 +158,7 @@
             android:id="@+id/play_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/play"
+            android:src="@drawable/play_putih"
             android:layout_marginStart="16dp"/>
 
         <ImageView
