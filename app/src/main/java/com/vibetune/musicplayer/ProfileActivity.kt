@@ -48,8 +48,8 @@ class ProfileActivity : AppCompatActivity() {
                     val userEmail = snapshot.child("email").value.toString()
 
                     // Ambil phone number dan birthday, dengan default value jika kosong
-                    val phoneNumber = snapshot.child("phoneNumber").value?.toString() ?: "No Phone Number"
-                    val birthday = snapshot.child("birthday").value?.toString() ?: "No Birthday"
+                    val phoneNumber = snapshot.child("phone").value?.toString() ?: "No Phone Number"
+                    val birthday = snapshot.child("birthdate").value?.toString() ?: "No Birthday"
 
                     // Set data pada TextView
                     usernameTextView.text = userName
@@ -77,7 +77,8 @@ class ProfileActivity : AppCompatActivity() {
 
         // Event: Edit Profil (Belum ada fungsi tambahan)
         editButton.setOnClickListener {
-            // Tambahkan logika untuk mengedit profil jika diperlukan
+            val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
         }
 
         // Event: Logout

@@ -51,6 +51,10 @@
             android:name=".SearchActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
