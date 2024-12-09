@@ -112,7 +112,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Pop Genre" />
+                    android:contentDescription="Pop Genre"
+                    android:src="@drawable/akuyangjatuhcinta"/>
             </FrameLayout>
 
             <FrameLayout
@@ -125,7 +126,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="DJ"/>
+                    android:contentDescription="DJ"
+                    android:src="@drawable/dj"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -148,7 +150,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Barat"/>
+                    android:contentDescription="Barat"
+                    android:src="@drawable/the19675"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -171,7 +174,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Koplo"/>
+                    android:contentDescription="Koplo"
+                    android:src="@drawable/TresnoLiyaneNorthsle"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -228,7 +232,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Pop Genre"/>
+                    android:contentDescription="allout"
+                    android:src="@drawable/neckdep"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -251,7 +256,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="estetik"
+                    android:src="@drawable/wildflowers"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -274,7 +280,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="Jazz Genre"
+                    android:src="@drawable/nina"/>
 
                 <TextView
                     android:layout_width="wrap_content"
