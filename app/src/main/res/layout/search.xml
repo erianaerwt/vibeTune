@@ -1,9 +1,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#292A32">
+    android:background="#292A32"
+    tools:context=".SearchActivity">
 
     <!-- App Bar -->
     <ImageView
@@ -160,6 +162,7 @@
         android:layout_alignParentBottom="true">
 
         <ImageView
+            android:id="@+id/homesearch"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -168,6 +171,7 @@
             />
 
         <ImageView
+            android:id="@+id/searchbutton"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -176,6 +180,7 @@
              />
 
         <ImageView
+            android:id="@+id/librarybutton"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"

@@ -175,7 +175,7 @@
                     android:layout_height="76dp"
                     android:layout_gravity="center"
                     android:contentDescription="Koplo"
-                    android:src="@drawable/TresnoLiyaneNorthsle"/>
+                    android:src="@drawable/tresnoliyanenorthsle"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -304,7 +304,8 @@
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Jazz Genre"/>
+                    android:contentDescription="Jazz Genre"
+                    android:src="@drawable/nyoman"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -377,6 +378,7 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:id="@+id/albumplay"
             android:contentDescription="Album Art"
             android:layout_marginEnd="8dp"
             android:scaleType="centerCrop" />
@@ -390,7 +392,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Formula - Labrinth"
+                android:id="@+id/musicplay"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_regular"

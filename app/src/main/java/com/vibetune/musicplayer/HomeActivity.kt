@@ -69,15 +69,8 @@ class HomeActivity : AppCompatActivity() {
         }
 
         searchIcon.setOnClickListener {
-            Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
-        }
-
-        libraryIcon.setOnClickListener {
-            Toast.makeText(this, "Library clicked", Toast.LENGTH_SHORT).show()
-        }
-
-        playIcon.setOnClickListener {
-            Toast.makeText(this, "Play clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
         }
 
         likeIcon.setOnClickListener {
