@@ -1,10 +1,13 @@
 package com.vibetune.musicplayer
 
+
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -14,57 +17,42 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.search)
 
-        // App Bar
-        val profileImage: ImageView = findViewById(R.id.profile)
+        val profileImage = findViewById<ImageView>(R.id.profile)
+        val titlesearch = findViewById<TextView>(R.id.title)
+        val search_input = findViewById<EditText>(R.id.search_input)
+        val search_icon = findViewById<ImageView>(R.id.search_icon)
+        val recent_searches_label = findViewById<TextView>(R.id.recent_searches_label)
+        val item_image = findViewById<ImageView>(R.id.item_image)
+        val item_title = findViewById<TextView>(R.id.item_title)
+        val item_subtitle = findViewById<TextView>(R.id.item_subtitle)
+        val item_remove = findViewById<ImageView>(R.id.item_remove)
+        val bottomNav = findViewById<LinearLayout>(R.id.bottomNav)
+        val homesearch = findViewById<ImageView>(R.id.homesearch)
+        val searchbutton = findViewById<ImageView>(R.id.searchbutton)
+        val librarybutton = findViewById<ImageView>(R.id.librarybutton)
 
-        // Title
-        val title: TextView = findViewById(R.id.title)
-
-        // Search Bar
-        val searchBar: LinearLayout = findViewById(R.id.search_bar)
-        val searchInput: EditText = findViewById(R.id.search_input)
-        val searchIcon: ImageView = findViewById(R.id.search_icon)
-
-        // Recent Searches
-        val recentSearchesLabel: TextView = findViewById(R.id.recent_searches_label)
-        val recentSearchesList: LinearLayout = findViewById(R.id.recent_searches_list)
-
-        // Bottom Navigation
-        val bottomNav: LinearLayout = findViewById(R.id.bottomNav)
-        val homeIcon: ImageView = bottomNav.findViewById(R.id.home)
-        val searchIconNav: ImageView = bottomNav.findViewById(R.id.search)
-        val libraryIcon: ImageView = bottomNav.findViewById(R.id.library)
-
-        // Example usage
         profileImage.setOnClickListener {
-            // Handle profile image click
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
-        searchIcon.setOnClickListener {
-            val query = searchInput.text.toString()
-            if (query.isNotEmpty()) {
-                // Perform search operation
-            }
+        search_input.setOnClickListener {
+            Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show()
         }
 
-        // Handle recent search item clicks dynamically
-        for (i in 0 until recentSearchesList.childCount) {
-            val item = recentSearchesList.getChildAt(i)
-            item.setOnClickListener {
-                // Handle click on recent search item
-            }
+        search_icon.setOnClickListener {
+            Toast.makeText(this, "Search Clicked", Toast.LENGTH_SHORT).show()
         }
 
-        homeIcon.setOnClickListener {
-            // Handle navigation to home
+        homesearch.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
 
-        searchIconNav.setOnClickListener {
-            // Handle navigation to search
+        librarybutton.setOnClickListener {
+            val intent = Intent(this, LibraryActivity::class.java)
+            startActivity(intent)
         }
 
-        libraryIcon.setOnClickListener {
-            // Handle navigation to library
-        }
     }
 }

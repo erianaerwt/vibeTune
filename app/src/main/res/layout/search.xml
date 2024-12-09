@@ -161,6 +161,7 @@
         android:layout_alignParentBottom="true">
 
         <ImageView
+            android:id="@+id/homesearch"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -169,6 +170,7 @@
             />
 
         <ImageView
+            android:id="@+id/searchbutton"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -177,6 +179,7 @@
              />
 
         <ImageView
+            android:id="@+id/librarybutton"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"

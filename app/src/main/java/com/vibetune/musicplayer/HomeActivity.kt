@@ -73,14 +73,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        libraryIcon.setOnClickListener {
-            val intent = Intent(this, LibraryActivity::class.java)
-            startActivity(intent)
-        }
 
-        playIcon.setOnClickListener {
-            Toast.makeText(this, "Play clicked", Toast.LENGTH_SHORT).show()
-        }
 
         likeIcon.setOnClickListener {
             Toast.makeText(this, "Like clicked", Toast.LENGTH_SHORT).show()
