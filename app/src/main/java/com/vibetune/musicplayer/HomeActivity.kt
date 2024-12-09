@@ -73,8 +73,6 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
         likeIcon.setOnClickListener {
             Toast.makeText(this, "Like clicked", Toast.LENGTH_SHORT).show()
         }
