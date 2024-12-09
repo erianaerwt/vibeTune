@@ -23,10 +23,10 @@
         android:id="@+id/btn_edit_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#D9818EB2"
         android:padding="6dp"
         android:text="Edit Profile"
-        android:textColor="#1C1B2F"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
         android:text="Jeky Wicaksono"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintTop_toBottomOf="@id/profile_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -82,7 +82,8 @@
                 android:layout_height="wrap_content"
                 android:text="Full Name"
                 android:textColor="#A0A0A0"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/et_full_name"
@@ -92,8 +93,9 @@
                 android:padding="14dp"
                 android:hint="Jeky wicaksono"
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <!-- Email Address -->
             <TextView
@@ -102,7 +104,8 @@
                 android:layout_marginTop="16dp"
                 android:text="Email Address"
                 android:textColor="#A0A0A0"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/et_email"
@@ -112,8 +115,9 @@
                 android:backgroundTint="#CCCCCC"
                 android:hint="jeky_wicak03@gmail.com"
                 android:inputType="textEmailAddress"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <!-- Phone Number -->
             <TextView
@@ -122,7 +126,8 @@
                 android:layout_marginTop="16dp"
                 android:text="Phone Number"
                 android:textColor="#A0A0A0"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/et_phone"
@@ -132,8 +137,9 @@
                 android:backgroundTint="#CCCCCC"
                 android:hint="+62-851-5682-8518"
                 android:inputType="phone"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <!-- Birth Date -->
             <TextView
@@ -142,7 +148,8 @@
                 android:layout_marginTop="16dp"
                 android:text="Birth Date"
                 android:textColor="#A0A0A0"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,8 +165,9 @@
                     android:backgroundTint="#CCCCCC"
                     android:hint="04"
                     android:inputType="number"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
 
                 <EditText
                     android:id="@+id/et_birth_month"
@@ -170,8 +178,9 @@
                     android:backgroundTint="#CCCCCC"
                     android:hint="November"
                     android:inputType="text"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
 
                 <EditText
                     android:id="@+id/et_birth_year"
@@ -182,13 +191,30 @@
                     android:backgroundTint="#CCCCCC"
                     android:hint="2002"
                     android:inputType="number"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/playlists_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2D3155"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Simpan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
