@@ -2,8 +2,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#2D3155"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".LibraryActivity">
 
     <!-- Header -->
     <ImageView
@@ -123,6 +125,7 @@
         android:layout_alignParentBottom="true">
 
         <ImageView
+            android:id="@+id/homelibrary"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -131,6 +134,7 @@
             />
 
         <ImageView
+            android:id="@+id/searchlibrary"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
@@ -139,6 +143,7 @@
             />
 
         <ImageView
+            android:id="@+id/librarylibrary"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="1"
