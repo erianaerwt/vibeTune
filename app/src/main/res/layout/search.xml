@@ -23,23 +23,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Title -->
+
+    <!-- Search Bar -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Find the best music for your playlist"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
         android:textStyle="bold"
-        android:fontFamily="@font/poppins_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile"/>
+        app:layout_constraintTop_toBottomOf="@id/profile" />
 
-    <!-- Search Bar -->
     <LinearLayout
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
