@@ -2,6 +2,7 @@ package com.vibetune.musicplayer
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -20,6 +21,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var libraryIcon: ImageView
     private lateinit var playIcon: ImageView
     private lateinit var likeIcon: ImageView
+    private lateinit var pop: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +38,8 @@ class HomeActivity : AppCompatActivity() {
         libraryIcon = findViewById(R.id.library)
         playIcon = findViewById(R.id.play)
         likeIcon = findViewById(R.id.heart)
+        pop = findViewById(R.id.popimage)
+
 
         // Get current user info from Firebase
         val user = firebaseAuth.currentUser
@@ -64,6 +68,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        pop.setOnClickListener {
+            val intent = Intent(this, PopSongsActivity::class.java)
+            startActivity(intent)
+        }
+
         homeIcon.setOnClickListener {
             Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show()
         }
@@ -75,6 +84,11 @@ class HomeActivity : AppCompatActivity() {
 
         likeIcon.setOnClickListener {
             Toast.makeText(this, "Like clicked", Toast.LENGTH_SHORT).show()
+        }
+
+        libraryIcon.setOnClickListener {
+            val intent = Intent(this, LibraryActivity::class.java)
+            startActivity(intent)
         }
     }
 }

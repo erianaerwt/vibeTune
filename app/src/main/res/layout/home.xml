@@ -92,6 +92,7 @@
 
 
             <FrameLayout
+                android:id="@+id/framepop"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
@@ -109,6 +110,7 @@
                     android:fontFamily="@font/poppins_regular"/>
 
                 <ImageView
+                    android:id="@+id/popimage"
                     android:layout_width="76dp"
                     android:layout_height="76dp"
                     android:layout_gravity="center"
