@@ -10,7 +10,7 @@
         android:id="@+id/playing_from"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Playing From Genre"
+        android:text="Playing From Playlist"
         android:textColor="#A7B5C9"
         android:textSize="14sp"
         android:fontFamily="@font/poppins_regular"
@@ -21,7 +21,7 @@
         android:id="@+id/playlist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pop Genre"
+        android:text="Euphoria Soundtrack"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_regular"
@@ -53,7 +53,6 @@
         android:layout_width="337dp"
         android:layout_height="327dp"
         android:layout_below="@id/playlist_name"
-        android:src="@drawable/nina"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
@@ -62,7 +61,7 @@
         android:id="@+id/song_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nina"
+        android:text="Formula"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:fontFamily="@font/poppins_regular"
@@ -75,7 +74,7 @@
         android:id="@+id/artist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=".Feast"
+        android:text="Labirinth"
         android:textColor="#A7B5C9"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_regular"
@@ -177,33 +176,81 @@
     </LinearLayout>
 
     <!-- Lyrics Section -->
-    <LinearLayout
-        android:id="@+id/lyrics_section"
+    <ScrollView
+        android:id="@+id/scrol_lirik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/media_controls"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:background="#5069B1"
         android:padding="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_below="@id/media_controls"
+        android:layout_marginBottom="16dp" >
 
-        <TextView
-            android:id="@+id/lyrics_judul"
+        <LinearLayout
+            android:id="@+id/lyrics_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lirik"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:fontFamily="@font/poppins_bolitalic"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/lyrics"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Saat engkau tertidur\nAku pergi menghibur\nBeda kota, pisah raga, bukan masalahku"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:fontFamily="@font/poppins_regular"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/lyrics_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lirik"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bolitalic"/>
+
+            <TextView
+                android:id="@+id/lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saat engkau tertidur
+\nAku pergi menghibur
+\nBeda kota, pisah raga, bukan masalahku
+\nLihat wajahmu di layar, ku tetap bersyukur
+\n\nSaat engkau terjaga
+\nAku 'kan ada di sana
+\nSempatkan bermain dan bawakan cendera mata
+\nSatu sampai lima tahun, cepat tak terasa
+\n\nSegala hal kuupayakan untuk melindungi
+\nTunggu aku kembali lagi esok pagi
+\n\nTumbuh lebih baik, cari panggilanmu
+\nJadi lebih baik dibanding diriku
+\n'Tuk sementara ini aku mengembara jauh
+\nSaat dewasa kau 'kan mengerti
+\n\nSaat engkau dewasa
+\nDan aku kian menua
+\nJika ku berpulang lebih awal, tidak apa
+\nBerjumpa lagi di sana, aku tetap sama
+\n\nSaat engkau teringat
+\nTengkar kita, manakala
+\nMaaf atas perjalanan yang tidak sempurna
+\nNamun percayalah, untukmu kujual dunia
+\n\nSegala hal kuupayakan untuk melindungi (untuk melindungi)
+\nTunggu aku kembali lagi esok pagi (selalu janjiku pada dirimu)
+\n\nTumbuh lebih baik, cari panggilanmu
+\nJadi lebih baik dibanding diriku
+\nDan tertawalah saat ini selepas-lepasnya
+\nKar'na kelak kau 'kan tersakiti
+\n\nAku tahu kamu hebat
+\nNamun, s'lamanya diriku pasti berkutat
+\n'Tuk s'lalu jauhkanmu dari dunia yang jahat
+\nIni sumpahku padamu 'tuk biarkanmu
+\n\nTumbuh lebih baik, cari panggilanmu
+\nJadi lebih baik dibanding diriku
+\n'Tuk sementara kita tertawakan berbagai hal
+\nYang lucu dan lara selepas-lepasnya
+\n\nSaat dewasa kau 'kan mengerti
+\nKar'na kelak kau 'kan tersakiti
+\nSaat dewasa kau 'kan mengerti
+\nKar'na kelak kau 'kan tersakiti"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
