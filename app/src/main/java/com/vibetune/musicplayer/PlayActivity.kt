@@ -58,22 +58,20 @@ class PlayActivity : AppCompatActivity() {
         progressBar.max = mediaPlayer?.duration ?: 0
         progressBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                // Optional: Pause music when user starts dragging
-                mediaPlayer?.pause()
-                isPlaying = false
+                // Do nothing here, no need to pause music
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                // Resume music when user finishes dragging
+                // Update the music position when the user stops dragging
                 mediaPlayer?.seekTo(seekBar?.progress ?: 0)
                 if (isPlaying) {
-                    mediaPlayer?.start()
+                    mediaPlayer?.start()  // Ensure it continues playing if it was playing before
                 }
             }
 
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (fromUser) {
-                    mediaPlayer?.seekTo(progress)
+                    mediaPlayer?.seekTo(progress)  // Move the media player's position as the seekbar changes
                 }
             }
         })

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var playIcon: ImageView
     private lateinit var likeIcon: ImageView
     private lateinit var pop: ImageView
+    private lateinit var musikplay : LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +41,7 @@ class HomeActivity : AppCompatActivity() {
         playIcon = findViewById(R.id.play)
         likeIcon = findViewById(R.id.heart)
         pop = findViewById(R.id.popimage)
+        musikplay = findViewById(R.id.musikplay)
 
 
         // Get current user info from Firebase
@@ -88,6 +91,11 @@ class HomeActivity : AppCompatActivity() {
 
         libraryIcon.setOnClickListener {
             val intent = Intent(this, LibraryActivity::class.java)
+            startActivity(intent)
+        }
+
+        musikplay.setOnClickListener {
+            val intent = Intent(this, PlayActivity::class.java)
             startActivity(intent)
         }
     }

@@ -381,11 +381,13 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:id="@+id/albumplay"
+            android:src="@drawable/nina"
             android:contentDescription="Album Art"
             android:layout_marginEnd="8dp"
             android:scaleType="centerCrop" />
 
         <LinearLayout
+            android:id="@+id/musikplay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -396,6 +398,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/musicplay"
                 android:textColor="#FFFFFF"
+                android:text="Nina - .Feast"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_regular"
                 android:maxLines="1"
@@ -420,9 +423,9 @@
 
         <ImageView
             android:id="@+id/play"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_putih"
             android:contentDescription="Play Icon"
             />
     </LinearLayout>
