@@ -42,6 +42,9 @@
         android:layout_height="100dp"
         android:layout_marginTop="60dp"
         android:src="@drawable/profile_image"
+        android:background="@drawable/circle_shape"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,9 +97,10 @@
                 android:backgroundTint="#CCCCCC"
                 android:padding="14dp"
                 android:inputType="textPersonName"
-                android:textColor="@color/black"
+                android:textColor="#1E201E"
                 android:textSize="16sp"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter birth month"/>
 
             <!-- Email Address -->
             <TextView
@@ -115,9 +119,10 @@
                 android:padding="14dp"
                 android:backgroundTint="#CCCCCC"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"
+                android:textColor="#1E201E"
                 android:textSize="16sp"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter birth month"/>
 
             <!-- Phone Number -->
             <TextView
@@ -136,9 +141,10 @@
                 android:padding="14dp"
                 android:backgroundTint="#CCCCCC"
                 android:inputType="phone"
-                android:textColor="@color/black"
+                android:textColor="#1E201E"
                 android:textSize="16sp"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter birth month"/>
 
             <!-- Birth Date -->
             <TextView
@@ -164,9 +170,10 @@
                     android:padding="14dp"
                     android:backgroundTint="#CCCCCC"
                     android:inputType="number"
-                    android:textColor="@color/black"
+                    android:textColor="#1E201E"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular"/>
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter birth month"/>
 
                 <EditText
                     android:id="@+id/et_birth_month"
@@ -176,9 +183,10 @@
                     android:padding="14dp"
                     android:backgroundTint="#CCCCCC"
                     android:inputType="text"
-                    android:textColor="@color/black"
+                    android:textColor="#1E201E"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular"/>
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter birth month"/>
 
                 <EditText
                     android:id="@+id/et_birth_year"
@@ -190,7 +198,8 @@
                     android:inputType="number"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:fontFamily="@font/poppins_regular"/>
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Enter birth month"/>
 
             </LinearLayout>
 

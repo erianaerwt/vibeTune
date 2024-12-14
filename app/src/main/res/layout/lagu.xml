@@ -24,13 +24,12 @@
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Pop Songs"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@id/backButton"
         app:layout_constraintTop_toTopOf="parent" />
 
